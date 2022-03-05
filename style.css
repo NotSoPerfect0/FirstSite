@@ -1,0 +1,28 @@
+.big {
+	font-size: 1cm;
+}
+
+.mono {
+	font-family: monospace;
+}
+
+.button {
+	font-family: monospace;
+    transition-duration: 0.4s;
+    background-color: gray;
+    border-radius: 4px;
+    border-color: black;
+    padding: 16px 32px;
+}
+
+.button:hover {
+	background-color: darkgray;
+}
+
+.button:smol {
+	font-size: 0.4cm;
+}
+
+.hidden {
+	cursor: default;
+}
