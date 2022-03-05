@@ -68,15 +68,17 @@ function strobeLights() {
 	if (!seizure) {
 		answer = prompt("Yes or No");
 		if (answer == "Yes" || answer == "yes") {
-			seizure = setInterval(updateColor, 10);
+			seizure = setInterval(updateColor, 25);
 			nodie = false;
 		} else if (answer == "No" || answer == "no") {
 			alert("Pedro does not care.")
 			nodie = false;
-			seizure = setInterval(updateColor, 10);
-		}
-		else {
-			alert("Please enter Y or N")
+			seizure = setInterval(updateColor, 25);
+		} else if (answer == "420") {
+			return;
+		}	else {
+				alert("Please enter Yes or No")
+				strobeLights()
 		}
 	}
 }
@@ -98,6 +100,6 @@ function basicStrobe() {
 	}
 	
 	if (!strobe) {
-		strobe = setInterval(updateColor, 20);
+		strobe = setInterval(updateColor, 25);
 	}
 }
